@@ -8,20 +8,12 @@
     <title>Merry Christmas, ye!</title>
     
     <link rel="stylesheet" href="../style.css"> 
-    <style>
-        /* 簡單的內聯樣式，正式版建議移到 style.css */
-        body { margin: 0; background: #0f2027; color: white; font-family: sans-serif; overflow: hidden; }
-        .overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #000; z-index: 99; display: flex; flex-direction: column; justify-content: center; align-items: center; transition: opacity 0.8s; }
-        .gift-icon { font-size: 80px; cursor: pointer; animation: bounce 2s infinite; }
-        .content { padding: 20px; text-align: center; display: none; max-width: 600px; margin: 0 auto; line-height: 1.6; }
-        @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-20px); } }
-    </style>
 </head>
 <body>
 
     <div id="opener" class="overlay">
         <div class="gift-icon">🎁</div>
-        <p>Tap to Open</p>
+        <p>開啟你的聖誕祝福！</p>
     </div>
 
     <audio id="bgm" loop>
@@ -29,45 +21,51 @@
     </audio>
 
     <div id="main-content" class="content">
-        <h1>Dear ye</h1>
+        <h1>merry christmas</h1>
         <hr style="width: 50%; border-color: #d63333;">
+        
         <div class="message-body">
-            <section class='letter-intro'><p>嗨！早安，現在是 12/09 的早上6點，我剛從床上爬起來泡了杯咖啡</p><p>昨天上課無聊，突然翻到我們那時候畢業旅行去大阪玩的照片，雖然現在大家都在彼此的軌道上努力生活著，但我真的很喜歡那時候的氛圍，大家一起在外隨意逛街、吃美食，每天睡不到3小時之外又花了一堆時間在找路，每個情況都足以成為一段特別的回憶。</p><p>已經過去了一年多了，我想說應該要再跟大家聊聊天，所以就起床寫了這封聖誕信。</p></section><section class='letter-reflection'><p>很多人都說當研究生就是沒錢沒時間，不知道這句話是不是真的，但我現在確實是卡在這樣的循環中。</p><p>我覺得我生活的方式就處於兩個極端，一方面想充實自己，但另一方面又覺得好累只想躺在床上睡 10 小時，感覺生活就是一直在跟自己妥協取得平衡，這大概就是長大的代價吧。</p></section><section class='letter-season'><p>最近天氣變冷，請好好照顧自己的健康。</p><p>這種天氣總讓我覺得如果能去日本看雪就好了。不知道你愛不愛看雪？總覺得下雪的日子特別浪漫，情侶在路上拉著手，朋友們在屋裡聚會，好像世間再也沒有煩惱一樣。</p><p>有機會的話再一起出去玩吧，特別想回到那些日子呢。</p></section><section class='letter-specific'><p>我覺得你是很好的人，既真誠又樂觀。</p><p>我覺得你一定能在未來順順利利的，不管遇到甚麼困難都能勇敢面對。</p><p>你只要去做你認為對的事情就好了，不要操之過急，你一定可以做到的。</p></section><section class='letter-closing'><p>總之我最近過得還算好，雖然忙但也多了些挑戰。</p><p>你也要好好加油，開心地活著才是最重要的。</p><p>希望明年的冬天也能這樣寫一封信給你。</p><p>聖誕快樂！</p></section>
+            <section class='letter-intro'>
+                <p>嗨！早安，現在是 12/09 的早上6點，我剛從床上爬起來泡了杯咖啡</p>
+                <p>昨天上課無聊，突然翻到我們那時候畢業旅行去大阪玩的照片，雖然現在大家都在彼此的軌道上努力生活著，但我真的很喜歡那時候的氛圍，大家一起在外隨意逛街、吃美食，每天睡不到3小時之外又花了一堆時間在找路，每個情況都足以成為一段特別的回憶。</p>
+                <p>已經過去了一年多了，我想說應該要再跟大家聊聊天，所以就起床寫了這封聖誕信。</p>
+            </section>
+
+            <section class='letter-reflection'>
+                <p>很多人都說當研究生就是沒錢沒時間，不知道這句話是不是真的，但我現在確實是卡在這樣的循環中。</p>
+                <p>我覺得我生活的方式就處於兩個極端，一方面想充實自己，但另一方面又覺得好累只想躺在床上睡 10 小時，感覺生活就是一直在跟自己妥協取得平衡，這大概就是長大的代價吧。</p>
+            </section>
+
+            <section class='letter-season'>
+                <p>最近天氣變冷，請好好照顧自己的健康。</p>
+                <p>這種天氣總讓我覺得如果能去日本看雪就好了。不知道你愛不愛看雪？總覺得下雪的日子特別浪漫，情侶在路上拉著手，朋友們在屋裡聚會，好像世間再也沒有煩惱一樣。</p>
+                <p>有機會的話再一起出去玩吧，特別想回到那些日子呢。</p>
+            </section>
+
+            <section class='letter-specific'>
+                <p>我覺得你是很好的人，既真誠又樂觀。</p>
+                <p>我覺得你一定能在未來順順利利的，不管遇到甚麼困難都能勇敢面對。</p>
+                <p>你只要去做你認為對的事情就好了，不要操之過急，你一定可以做到的。</p>
+            </section>
+
+            <section class='letter-closing'>
+                <p>總之我最近過得還算好，雖然忙但也多了些挑戰。</p>
+                <p>你也要好好加油，開心地活著才是最重要的。</p>
+                <p>希望明年的冬天也能這樣寫一封信給你。</p>
+                <p>聖誕快樂！</p>
+                
+                <p style='text-align:right; color:#aaa; font-size:0.9em; margin-top:20px;'>2025/12/09</p>
+            </section>
         </div>
+
+        <div class="photo-container">
+            <img src="../photo.jpg" alt="Our Memory">
+        </div>
+        
         <br><br>
-        <small>Made with ❤️ by [你的名字]</small>
+        <small>好想睡覺</small>
     </div>
 
-    <script>
-        // 簡單的互動邏輯
-        document.getElementById('opener').addEventListener('click', function() {
-            const audio = document.getElementById('bgm');
-            const overlay = document.getElementById('opener');
-            const content = document.getElementById('main-content');
-
-            // 1. 播放音樂
-            audio.volume = 0.6;
-            audio.play().catch(e => console.log("Audio play failed:", e));
-
-            // 2. 特效：雪花 (這裡可以呼叫外部 function)
-            // createSnow(); 
-
-            // 3. 切換畫面
-            overlay.style.opacity = '0';
-            setTimeout(() => {
-                overlay.style.display = 'none';
-                content.style.display = 'block';
-                // 簡單淡入
-                content.style.opacity = '0';
-                let op = 0;
-                let timer = setInterval(function () {
-                    if (op >= 1){ clearInterval(timer); }
-                    content.style.opacity = op;
-                    content.style.filter = 'alpha(opacity=' + op * 100 + ")";
-                    op += 0.1;
-                }, 50);
-            }, 800);
-        });
-    </script>
+    <script src="../script.js"></script>
 </body>
 </html>
