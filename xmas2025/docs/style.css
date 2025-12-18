@@ -142,3 +142,28 @@ small {
     pointer-events: none;
     text-shadow: 0 0 5px rgba(0,0,0,0.5);
 }
+/* === 照片樣式 === */
+.photo-container {
+    margin: 20px auto 30px auto;
+    width: 90%;
+    max-width: 400px;
+    background: #fff;
+    padding: 10px 10px 30px 10px; /* 底部留白多一點，像拍立得 */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transform: rotate(-2deg); /* 微微傾斜，增加俏皮感 */
+    transition: transform 0.3s ease;
+    border-radius: 2px;
+}
+
+.photo-container:hover {
+    transform: rotate(0deg) scale(1.02); /* 滑鼠碰到會回正並放大 */
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    z-index: 5;
+}
+
+.photo-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 2px;
+}
