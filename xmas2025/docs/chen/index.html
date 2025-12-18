@@ -38,36 +38,7 @@
         <small>Made with ❤️ by [你的名字]</small>
     </div>
 
-    <script>
-        // 簡單的互動邏輯
-        document.getElementById('opener').addEventListener('click', function() {
-            const audio = document.getElementById('bgm');
-            const overlay = document.getElementById('opener');
-            const content = document.getElementById('main-content');
-
-            // 1. 播放音樂
-            audio.volume = 0.6;
-            audio.play().catch(e => console.log("Audio play failed:", e));
-
-            // 2. 特效：雪花 (這裡可以呼叫外部 function)
-            // createSnow(); 
-
-            // 3. 切換畫面
-            overlay.style.opacity = '0';
-            setTimeout(() => {
-                overlay.style.display = 'none';
-                content.style.display = 'block';
-                // 簡單淡入
-                content.style.opacity = '0';
-                let op = 0;
-                let timer = setInterval(function () {
-                    if (op >= 1){ clearInterval(timer); }
-                    content.style.opacity = op;
-                    content.style.filter = 'alpha(opacity=' + op * 100 + ")";
-                    op += 0.1;
-                }, 50);
-            }, 800);
-        });
-    </script>
+<script src="../script.js"></script>
 </body>
+
 </html>
